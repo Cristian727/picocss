@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
 <body>
+    <main class="container"></main>
+
+
     <section class="container">
-        <h1>Hola Mundo</h1>
+        <marquee behavior="slide" direction="up">
+
+            <h1>Hola Mundo</h1>
+
+        </marquee>
         <h2>Algo de contenido</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam sed rerum eaque molestias voluptatibus totam labore sapiente magni, maiores fugiat nulla consectetur aliquid, omnis odio ducimus necessitatibus dolor id.</p>
         <div class="grid">
@@ -20,6 +27,34 @@
             <input type="text" placeholder="Valid" aria-invalid="false">
 
         </div>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+
+    </ol>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <article data-theme="light">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate cupiditate velit, nobis officia nulla tempora molestias aut deserunt impedit nostrum consectetur. Vel dolores officiis sed quas quisquam, ratione numquam.</p>
+    </article>
+    <input type="range" id="range" max="100" min="0" value="0" onchange="update()">
+    <progress min="0" max="100" value="50" id="progressbar"></progress>
     </section>
+
+    <script>
+        function update(){
+            const data = document.querySelector("#range").value
+            document.querySelector("#progressbar").value = data
+        }
+    </script>
 </body>
 </html>
