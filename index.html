@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Picocss</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
 <body>
-    
+    <section class="container">
+        <h1>Hola Mundo</h1>
+        <h2>Algo de contenido</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam sed rerum eaque molestias voluptatibus totam labore sapiente magni, maiores fugiat nulla consectetur aliquid, omnis odio ducimus necessitatibus dolor id.</p>
+        <div class="grid">
+            <button class="secondary">Click</button>
+            <button class="contrast">Click</button>
+            <button disabled >Click</button>
+            <button>Click</button>
+            <input type="text" placeholder="Invalid" aria-invalid="true">
+            <input type="text" placeholder="Valid" aria-invalid="false">
+
+        </div>
+    </section>
 </body>
 </html>
