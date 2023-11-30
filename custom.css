@@ -1,0 +1,11 @@
+:root {
+    --primary: rgb(150, 13, 255);
+  }
+
+  .contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }

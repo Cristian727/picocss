@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picocss</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
     <main class="container"></main>
@@ -42,6 +43,8 @@
         <li>Item 4</li>
         <li>Item 5</li>
     </ul>
+    <a href="contador.html">Contador</a>
+
     <article data-theme="light">
         <h1>Hola mundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate cupiditate velit, nobis officia nulla tempora molestias aut deserunt impedit nostrum consectetur. Vel dolores officiis sed quas quisquam, ratione numquam.</p>
@@ -50,11 +53,6 @@
     <progress min="0" max="100" value="50" id="progressbar"></progress>
     </section>
 
-    <script>
-        function update(){
-            const data = document.querySelector("#range").value
-            document.querySelector("#progressbar").value = data
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
